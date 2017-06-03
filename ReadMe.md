@@ -4,12 +4,12 @@ This is the repository developed for 'Image Classifier in TensorFlow in 5 Min on
 
 Applications can use this model to detect nudity in the images using this model.
 
-Final test accuracy = 98.2% (N=1098)
+```Final test accuracy = 98.2% (N=1098)```
 
 training command
 
-python retrain.py \ --bottleneck_dir=bottlenecks \ --how_many_training_steps=500 \ --model_dir=inception \ --summaries_dir=training_summaries/basic \ --output_graph=retrained_graph.pb \ --output_labels=retrained_labels.txt \ --image_dir=trainimg
+```python retrain.py \ --bottleneck_dir=bottlenecks \ --how_many_training_steps=500 \ --model_dir=inception \ --summaries_dir=training_summaries/basic \ --output_graph=retrained_graph.pb \ --output_labels=retrained_labels.txt \ --image_dir=trainimg```
 
 Give a test image to verify the model
 
-python classify.py test_image.jpg
+```python classify.py test_image.jpg```
